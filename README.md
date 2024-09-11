@@ -181,6 +181,94 @@ LET ME TELL YOU THE DIFFERENCE:
 
 pow(x, y, z) = (x ** y) % z    THIS ** CANNOT DO.
 
+```
+
+```
+PRACTICE QUESTIONS:
+
+1. Write a script that asks the user to input a number and then dis-
+plays that number rounded to two decimal places. When run, your program should look like this:
+
+Enter a number: 5.432
+5.432 rounded to 2 decimal places is 5.43
+
+>>>n = float(input("Enter a number: "))
+>>>z = round(n, 2)
+
+>>>print(f"{n} rounded to 2 decimal places is, {z}")
+5.432 rounded to 2 decimal places is 5.43
+
+
+2. Write a script that asks the user to input a number and then displays the absolute value of that number.
+When run, your program should look like this:
+
+Enter a number: -10
+The absolute value of -10 is 10.0
+
+>>>n = float(input("Enter a number: "))
+
+>>>print(f"The absolute value of {int(n)} is {abs(n)}")
+
+
+3. Write a script that asks the user to input two numbers by using the input() function twice,
+then display whether or not the diﬀerence between those two number is an integer.
+When run, your program should look like this:
+
+Enter a number: 1.5
+Enter another number: .5
+
+The difference between 1.5 and .5 is an integer? True!
+
+If the user inputs two numbers whose diﬀerence is not integral,
+the output should look like this:
+
+Enter a number: 1.5
+Enter another number: 1.0
+
+The difference between 1.5 and 1.0 is an integer? False!
+
+
+>>> IN THIS QUESTION, WE WILL BE USING .find_integer() METHOD
+    IT RETURNS TRUE IF THE NUMBER IS A INTEGER OTHERWISE FALSE, SO LET'S BEGIN:
+
+
+>>>x = float(input("Enter a number: "))
+>>>y = float(input("Enter another number: "))
+
+>>>z = x - y
+>>>if z.is_integer():
+        >>>print(f"The difference between {x} and {y} is an integer? True!")
+>>>else:
+        >>>print(f"The difference between {x} and {y} is an integer? False!")
+
+```
+
+```
+PRINT NUMBERS IN STYLE USING F-STRINGS:
+
+~>>>n = 7.155
+>>>print(f"The absolute value of {n} upto 2 decimal places is {(n:.2f)}")
+The absolute value of 7.155 upto 2 decimal places is 7.16
+
+THIS 2 IN 2f REPRESENTS THAT UPTO HOW MUCH WE WANT TO ROUND OFF.
+IF WE WANT TO ROUND OFF TO 1 DECIMAL PLACES, WRITE 1 INSTEAD OF 2.
+
+~>>>n = 1234567890
+>>>print(f"The  value of {n}  is {(n: ,)}")
+The  value of 1234567890  is  1,234,567,890
+
+THE COMMA(,) INSERTS COMMAS ACCORDING TO THE INDIAN NUMBER SYSTEM.
+
+```
+
+
+
+
+
+
+
+
+
 
 
 
