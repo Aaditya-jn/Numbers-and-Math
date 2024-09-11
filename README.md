@@ -144,6 +144,44 @@ round()     USED FOR ROUNDING OFF NUMBERS TO A CERTAIN DIGIT.
 abs()       USED TO DETERMINE THE ABSOLUTE VALUE OF A NUMBER (MODULLUS FUNCTION ||)  
 pow()       USED TO CALCULATE POWER. WE WILL ALSO SEE DIFF BTWN ** AND pow()
 
+ROUND FUNCTION:
+
+>>>round(2.7)
+3
+
+>>>round(2.4)
+2
+
+BUT WHAT IS NUMBER ENDS WITH .5, THEN:
+
+Basically if there is (even.5) then rounding off will be (even) and if there is
+(odd.5) then rounding off will be (odd + 1).       THAT'S SIMPLE...
+
+IF WE WANT TO ROUND OFF TO A SPECIFIC DIGIT OF OURSELVES THEN E PASS TWO ARUMENTS;
+
+>>>round(3.14159, 3)
+3.142
+
+>>>round(2.71828, 2)
+2.72
+
+ABSOLUTE FUNCTION:
+
+This is modullus function in mathematics. | number |
+
+If n is positive then the absolute of it is n itself.
+If n is negative then the absolute value of it is also n.
+
+~DENOTED BY abs(n)
+
+POWER FUNCTION:
+
+THIS WORKS SAME AS ** FUNCTION.
+LET ME TELL YOU THE DIFFERENCE:
+
+pow(x, y, z) = (x ** y) % z    THIS ** CANNOT DO.
+
+
 
 
 
