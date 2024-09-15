@@ -72,6 +72,8 @@ Operands need not to be of same type always.
 To calculate the remainder r of dividing a number x by a number y, Python
 uses the equation r = x - (y * (x // y)).
 
+FIRST CALCULATE x // y. THEN MULTIPLY THE RESULT OF x // y to y AND THEN FINALLY CALCULATED GETS SUBTRACTED FROM x.
+
 
 >>>-5 // -3                  
 1
